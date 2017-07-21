@@ -25,9 +25,10 @@ body {
     pointer-events: none;
 }
 
-/* modal css*/
-@import url(http://fonts.googleapis.com/css?family=Roboto);
 
+/* modal css*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -36,8 +37,9 @@ body {
     width: 350px;
 }
 
-#login-modal input[type=text], input[type=password] {
-	margin-top: 10px;
+#login-modal input[type=text],
+input[type=password] {
+    margin-top: 10px;
 }
 
 #div-login-msg,
@@ -92,6 +94,7 @@ body {
     max-width: 100px;
 }
 
+
 /* #########################################
    #    override the bootstrap configs     #
    ######################################### */
@@ -142,7 +145,8 @@ body {
     outline: none;
 }
 
-.btn-lg, .btn-group-lg>.btn {
+.btn-lg,
+.btn-group-lg>.btn {
     border-radius: 0px;
 }
 
@@ -151,7 +155,8 @@ body {
     color: #95a5a6;
 }
 
-.btn-link:hover, .btn-link:focus {
+.btn-link:hover,
+.btn-link:focus {
     color: #2c3e50;
     text-decoration: none;
 }
@@ -161,8 +166,9 @@ body {
 }
 
 .form-control {
-  border-radius: 0px;
+    border-radius: 0px;
 }
+
 
 /* 
 overwrite bootstrap default margin-left, because the <label> doesn't contain the <input> element.
@@ -174,7 +180,6 @@ overwrite bootstrap default margin-left, because the <label> doesn't contain the
 .radio-inline input[type=radio] {
     position: absolute;
     margin-top: 4px \9;
-    margin-left: 0px;
 }
 
 div.form-group {
