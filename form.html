@@ -21,14 +21,15 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <a class="navbar-brand" href="#"> <img src="img/THElogo.svg"></a>
+                <a class="navbar-brand" href="#"> <img class="thelogo" src="img/THElogo.svg"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
-                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1</a> </li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sign In</a> </li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -40,7 +41,7 @@
     <div class="container">
         <div class="row">
             <h1 class="text-center">Already Signed up for Beth-Ann's Website? That's Great, Welcome Back!</h1>
-            <p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">Sign In Here!</a></p>
+            <p class="text-center"><a href="#" class="signinbtn btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">Sign In Here!</a></p>
         </div>
     </div>
     <!-- END # BOOTSNIP INFO -->
@@ -48,16 +49,15 @@
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header" align="center"> <img class="img-circle" id="img_logo" src="http://bootsnipp.com/img/logo.jpg">
+                <div class="modal-header" align="center"> <img class="thelogo2" src="img/THElogo.svg">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> </button>
                 </div>
+                <div class="modalsubtitle"> Please type your Username and Password. </div>
                 <!-- Begin # DIV Form -->
                 <div id="div-forms">
                     <!-- Begin # Login Form -->
                     <form id="login-form">
                         <div class="modal-body">
-                            <div id="div-login-msg">
-                                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div> <span id="text-login-msg">Type your username and password.</span> </div>
                             <input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
                             <input id="login_password" class="form-control" type="password" placeholder="Password" required>
                             <div class="checkbox">
@@ -67,7 +67,7 @@
                         </div>
                         <div class="modal-footer">
                             <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                                <button type="submit" class="loginbtn btn btn-primary btn-lg btn-block">Login</button>
                             </div>
                             <div>
                                 <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>

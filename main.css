@@ -25,12 +25,38 @@ body {
     pointer-events: none;
 }
 
+.thelogo {
+    margin-top: -15px;
+    height: 50px;
+    width: 50px
+}
+
+.signinbtn {
+    background-image: linear-gradient(to bottom, #222, #87e0ec 100%);
+}
+
 
 /* modal css*/
 
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+.thelogo2 {
+    height: 150px;
+    width: 150px;
+}
+
+.loginbtn {
+    background-image: linear-gradient(to bottom, #222, #87e0ec 100%);
+}
+
+.modalsubtitle {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-left: 7px;
 }
 
 #login-modal .modal-dialog {
@@ -136,14 +162,15 @@ input[type=password] {
     border-radius: 0px;
 }
 
-.btn:focus,
+
+/*.btn:focus,
 .btn:active:focus,
 .btn.active:focus,
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
     outline: none;
-}
+}*/
 
 .btn-lg,
 .btn-group-lg>.btn {
@@ -155,11 +182,12 @@ input[type=password] {
     color: #95a5a6;
 }
 
-.btn-link:hover,
+
+/*.btn-link:hover,
 .btn-link:focus {
     color: #2c3e50;
     text-decoration: none;
-}
+}*/
 
 .glyphicon {
     top: 0px;
