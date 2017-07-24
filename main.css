@@ -4,12 +4,36 @@ body {
 
 .homepage {
     height: 750px;
-    background-image: url(img/milky-way-rocks-night-landscape.jpg)
+    background-image: url(img/spacemtn3.jpeg);
 }
 
 .welcome {
     color: white;
     margin-top: 200px;
+}
+
+.search {
+    margin-top: -100px;
+}
+
+#imaginary_container {
+    margin-top: 20%;
+    /* Don't copy this */
+}
+
+.stylish-input-group .input-group-addon {
+    background: white !important;
+}
+
+.stylish-input-group .form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-color: #ccc;
+}
+
+.stylish-input-group button {
+    border: 0;
+    background: transparent;
 }
 
 .jf-form {
