@@ -17,7 +17,7 @@
     <link href="main.css" rel="stylesheet"> </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -27,23 +27,26 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
                     <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sign In</a> </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Events</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Sign Up</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in" data-target="#login-modal"></span> Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="row">
-            <h1 class="text-center">Already Signed up for Beth-Ann's Website? That's Great, Welcome Back!</h1>
-            <p class="text-center"><a href="#" class="signinbtn btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">Sign In Here!</a></p>
+    <section class="homepage">
+        <div class="container ">
+            <div class="row">
+                <h1 class="text-center welcome">Already Signed up for NWA Space News? That's Great, Welcome Back!</h1>
+                <p class="text-center"><a href="#" class="signinbtn btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">Sign In Here!</a></p>
+            </div>
         </div>
-    </div>
+    </section>
     <!-- END # BOOTSNIP INFO -->
     <!-- BEGIN # MODAL LOGIN -->
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
@@ -71,7 +74,7 @@
                             </div>
                             <div>
                                 <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                                <button id="signup" type="button" class="btn btn-link" data-nav-section="signup">Register</button>
                             </div>
                         </div>
                     </form>
@@ -84,16 +87,16 @@
                             <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required> </div>
                         <div class="modal-footer">
                             <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                                <button type="submit" class="sendbtn btn btn-primary btn-lg btn-block">Send</button>
                             </div>
                             <div>
                                 <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
-                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                                <button id="signup" type="button" class="btn btn-link" data-target="#signup">Register</button>
                             </div>
                         </div>
                     </form>
                     <!-- End | Lost Password Form -->
-                    <!-- Begin | Register Form -->
+                    <!-- Begin | Register Form 
                     <form id="register-form" style="display:none;">
                         <div class="modal-body">
                             <div id="div-register-msg">
@@ -111,7 +114,7 @@
                             </div>
                         </div>
                     </form>
-                    <!-- End | Register Form -->
+                     End | Register Form -->
                 </div>
                 <!-- End # DIV Form -->
             </div>
@@ -123,7 +126,7 @@
             <p>Answer a few quick questions to enroll! </p>
     </div>
     <!-- ----------------------------------------------- -->
-    <div class="container jf-form">
+    <div id="signup" class="container jf-form" data-section="signup">
         <form data-licenseKey="" name="jqueryform-e78493" id="jqueryform-e78493" action='admin.php' method='post' enctype='multipart/form-data' novalidate autocomplete="on">
             <input type="hidden" name="method" value="validateForm">
             <input type="hidden" id="serverValidationFields" name="serverValidationFields" value="">
@@ -197,12 +200,12 @@
             <div class="form-group f14 required" data-fid="f14">
                 <label class="control-label" for="f14">Confirm Password</label>
                 <input type="text" class="form-control" id="f14" name="f14" value="" data-rule-required="true" /> </div>
-            <div class="form-group submit f0 " data-fid="f0" style="position: relative;">
+            <div class="form-group submit f0  " data-fid="f0" style="position: relative;">
                 <label class="control-label sr-only" for="f0" style="display: block;">Submit Button</label>
                 <div class="progress" style="display: none; z-index: -1; position: absolute;">
                     <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%"> </div>
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg" style="z-index: 1;"> Submit </button>
+                <button type="submit" class="btn btn-primary btn-lg submitbtn" style="z-index: 1;"> Submit </button>
             </div>
             <div class="clearfix"></div>
             <div class="submit">

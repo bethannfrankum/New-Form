@@ -2,6 +2,16 @@ body {
     background-color: #87e0ec;
 }
 
+.homepage {
+    height: 750px;
+    background-image: url(img/milky-way-rocks-night-landscape.jpg)
+}
+
+.welcome {
+    color: white;
+    margin-top: 200px;
+}
+
 .jf-form {
     margin-top: 28px;
 }
@@ -35,6 +45,10 @@ body {
     background-image: linear-gradient(to bottom, #222, #87e0ec 100%);
 }
 
+.submitbtn {
+    background-image: linear-gradient(to bottom, #222, #87e0ec 100%);
+}
+
 
 /* modal css*/
 
@@ -49,6 +63,10 @@ body {
 }
 
 .loginbtn {
+    background-image: linear-gradient(to bottom, #222, #87e0ec 100%);
+}
+
+.sendbtn {
     background-image: linear-gradient(to bottom, #222, #87e0ec 100%);
 }
 
